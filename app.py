@@ -1,9 +1,13 @@
 from flask import Flask, render_template, request, jsonify
 import openai
+import os
+
+API_KEY = os.environ.get('SECRETKEY')
+
 
 app = Flask(__name__)
 
-openai.api_key = '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'
+openai.api_key = API_KEY
 
 @app.route('/')
 def index():
