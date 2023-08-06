@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import openai
 import os
 
-API_KEY = os.environ.get('SECRETKEY')
+API_KEY = os.environ.get(SECRETKEY)
 
 
 app = Flask(__name__)
